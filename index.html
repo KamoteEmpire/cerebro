@@ -5,23 +5,24 @@
 		<script>
 			$(document).ready(function (){
 				
-				/*$.ajax({
+				$.ajax({
 					type:'GET',
 					url:'http://ec2-52-27-162-238.us-west-2.compute.amazonaws.com:8080/cerebro-1.0-SNAPSHOT/lookup/barangay/getAllBarangays',
-					dataType: "JSON",  
+					dataType: "JSONP",  
 					data: {},
 						success:function(data) {
 							alert(data.id);
 					}
 				});
-				*/
 				
+				/*
 				$.getJSON("http://ec2-52-27-162-238.us-west-2.compute.amazonaws.com:8080/cerebro-1.0-SNAPSHOT/lookup/barangay/getAllBarangays", function(data)
          		{
 					$.each(data, function(key, value) {
 						$("#divjson").append('<h1>'+value['id']+'</h1>'+'<h1>'+value['name']+'</h1>'+'<hr/>');					
 					});		
 				});
+				*/
 				
 			});
 		</script>
